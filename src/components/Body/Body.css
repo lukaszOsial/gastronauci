@@ -8,11 +8,65 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 390px;
+    max-width: 450px;
     transform: translate(-50%, -50%);
 }
 .description h2 {
-    font-size: 35px;
+    font-size: 42px;
     text-transform: uppercase;
 }
+.instruction{
+    position: relative;
+}
+.instruction img{
+    width: 100%;
+    opacity: 0.3;
+}
+.instruction h2{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+.instruction-container{
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    position: absolute;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    max-width: 1300px;
+    text-align: center;
+    grid-template: 55px 100px / 1fr 1fr 1fr;
+    gap: 20px 20px;  
+}
+.grid-container h3{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.partnership{
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.partnership .description{
+    width: 40%;
+    margin-right: 40px;
+}
+.img-box{
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    
+}
+.img-box img {
+    max-width: 550px;
+    
+}
+
 

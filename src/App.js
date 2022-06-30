@@ -3,7 +3,9 @@ import Header from './components/Header/Header';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Order } from './components/Pages/Order/Order';
 import { Contact } from './components/Pages/Contact/Contact';
-import Body from './components/Body/Body';
+
+import { Home } from './components/Home/Home';
+import { Partnership } from './components/Pages/Partnership/Partnership';
 
 function App() {
   return (
@@ -11,19 +13,25 @@ function App() {
       <Router>
       <Header />
       <Routes>
+        <Route
+        path="/"
+        element={<Home />}
+        />
         <Route 
           path="/order" 
           element={<Order />}
-          exact
+        />
+        <Route
+        path="/partnership"
+        element={<Partnership />}
         />
         <Route 
           path="/contact" 
           element={<Contact />}
-          exact
         />
       </Routes>
      </Router>
-     <Body/>
+     
     </div>
   );
 }

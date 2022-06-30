@@ -1,8 +1,8 @@
 import React from 'react'
-import './Body.css';
+import './Home.css'
+import { NavLink } from 'react-router-dom';
 
-function Body() {
-    
+export const Home = () => {
   return (
     <div>
       <div className='home-info'>
@@ -30,17 +30,23 @@ function Body() {
         <div className='description'>
           <h2>Prowadzisz lokal?</h2>
           <p>To świetnie się składa - odezwij się do nas i nawiążmy współpracę. Dodamy Cię do bazy naszych restauracji, aby przyszli klienci mogli Cię łatwo odnaleźć i składać zamówienia.</p>
-          <button>
-          Sprawdź ofertę
-          </button>
+          <NavLink  
+            to="/partnership"
+            className="button"
+          >
+            Sprawdź ofertę
+          </NavLink>
         </div>
         <div className='img-box'>
           <img src='/images/partnership.png' alt='partnership'/>
         </div>
       </div>
+      <div className='footer'>
+            <h3>Gastronauci</h3>
+            <p>Copyright © 2022 Gastronauci</p>
+            <a>Regulamin usługi</a>
+            <a>Polityka prywatności</a>
+        </div>
     </div>
-    
   )
 }
-
-export default Body;

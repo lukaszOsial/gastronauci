@@ -1,0 +1,37 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 150px 0 0 0;
+}
+.contact-description{
+    text-align: center;
+    margin: 30px 0;
+}
+.contact-links{
+    display: flex;
+    flex-direction: column;
+}
+.contact-links a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--primary);
+}
+.contact-links a:hover, .contact-items a:hover{
+    color: var(--secondary);
+}
+.contact-items{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.contact-items a{
+    color: var(--primary);
+    margin: 0 20px;
+}

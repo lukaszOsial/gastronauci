@@ -11,8 +11,7 @@ function Header() {
     <>
         <nav className='navbar'>
             <div className='nav-container'>
-                <NavLink
-                    exact
+                <NavLink  
                     to="/"
                     className="nav-logo"
                 >
@@ -21,7 +20,6 @@ function Header() {
                 <ul className="nav-menu">
                     <li className='nav-item'>
                         <NavLink
-                        exact
                         to="/order"
                         className="nav-links"
                         onClick={handleClick}
@@ -31,7 +29,6 @@ function Header() {
                     </li>
                     <li className='nav-item'>
                         <NavLink
-                        exact
                         to="/contact"
                         className="nav-links"
                         onClick={handleClick}

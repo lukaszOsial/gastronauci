@@ -1,21 +1,21 @@
 .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
+    min-height: calc(100vh - 350px);
 }
 .title h2{
     font-size: 40px;
     text-transform: uppercase;
     text-align: center;
-    margin: 150px 0 0 0;
+    margin: 150px 0 20px 0;
 }
 .contact-description{
     text-align: center;
-    margin: 30px 0;
+    margin-bottom: 20px;
 }
 .contact-links{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .contact-links a{
     display: flex;
@@ -29,7 +29,6 @@
 .contact-items{
     display: flex;
     justify-content: center;
-    margin: 30px 0;
 }
 .contact-items a{
     color: var(--primary);

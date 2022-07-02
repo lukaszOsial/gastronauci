@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import { NavLink } from 'react-router-dom';
+import { Footer } from '../Footer/Footer';
 
 export const Home = () => {
   return (
@@ -41,12 +42,7 @@ export const Home = () => {
           <img src='/images/partnership.png' alt='partnership'/>
         </div>
       </div>
-      <div className='footer'>
-            <h3>Gastronauci</h3>
-            <p>Copyright © 2022 Gastronauci</p>
-            <a>Regulamin usługi</a>
-            <a>Polityka prywatności</a>
-        </div>
+      <Footer/>
     </div>
   )
 }

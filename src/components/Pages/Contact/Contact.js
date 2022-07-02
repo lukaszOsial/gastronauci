@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { Footer } from '../../Footer/Footer';
 import './Contact.css';
 
 
 export const Contact = () => {
   return (
-    <div className='contact'>
+    <>
+      <div className='contact'>
         <div className='title'>
           <h2>Napisz do nas. Lubimy rozmawiać.</h2>
         </div>
@@ -22,6 +24,10 @@ export const Contact = () => {
           <a href="https://www.facebook.com/" target="_blank"><FaFacebookF size={45} /></a>
           <a href="https://www.instagram.com/" target="_blank"><FaInstagram size={45} /></a>
         </div>
-    </div>
+        
+      </div>
+      <Footer/>
+    </>
+    
   )
 }

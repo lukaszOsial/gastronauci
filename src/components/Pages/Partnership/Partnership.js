@@ -1,11 +1,13 @@
 import React from 'react';
 import { Footer } from '../../Footer/Footer';
-import { PartnershipFirstSection, Title , Description, LinkItem, Subtitle, PartnershipSecondSection, SectionItem, ItemSubtitle} from './PartnershipStyle.js';
+import { PartnershipFirstSection, Title , Description, LinkItem, Subtitle, PartnershipSection, SectionItem, ItemSubtitle, Hr} from './PartnershipStyle.js';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 import { FaMoneyBillAlt } from 'react-icons/fa';
 import { MdMenuBook } from 'react-icons/md';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { GiPoland } from 'react-icons/gi';
+import { RiEdit2Fill } from 'react-icons/ri';
+import { VscDebugStart } from 'react-icons/vsc';
 
 export const Partnership = () => {
   return (
@@ -20,7 +22,7 @@ export const Partnership = () => {
         </LinkItem>
       </PartnershipFirstSection>
       <Subtitle>Dlaczego Gastronauci?</Subtitle>
-      <PartnershipSecondSection>
+      <PartnershipSection>
         <SectionItem>
           <AiOutlineClockCircle size={55} color="var(--primary)" />
           <ItemSubtitle>Uruchomienie nawet w 1 dzień</ItemSubtitle>
@@ -46,12 +48,28 @@ export const Partnership = () => {
           <ItemSubtitle>Wspierasz polskie!</ItemSubtitle>
           <p>Jesteśmy polską firmą, stworzoną z własnych środków, nie zagranicznych inwestorów. Żyjemy w Polsce i tutaj płacimy podatki.</p>
         </SectionItem>
-      </PartnershipSecondSection>
+      </PartnershipSection>
+      <Hr></Hr>
+      <Subtitle>Jak rozpocząć współpracę?</Subtitle>
+      <PartnershipSection>
+        <SectionItem>
+          <MdMenuBook size={55} color="var(--primary)" />
+          <ItemSubtitle>Wprowadzamy Twoje menu</ItemSubtitle>
+          <p>Skontaktuj się z nami dzwoniąc pod numer +48 123 456 789 lub wysyłając wiadomość na adres wspolpraca@gastronauci.pl w celu dostarczenia menu, a my wprowadzimy je i wrócimy z informacją w ciągu 24 godzin.</p>
+        </SectionItem>
+        <SectionItem>
+          <RiEdit2Fill size={55} color="var(--primary)" />
+          <ItemSubtitle>Skonfigurujemy system dla Ciebie</ItemSubtitle>
+          <p>Otrzymasz dostęp do aplikacji, którą możesz używać na dowolnym urządzeniu z dostępem do Sieci - laptopie, tablecie i nawet komórce.</p>
+        </SectionItem>
+        <SectionItem>
+          <VscDebugStart size={55} color="var(--primary)" />
+          <ItemSubtitle>Zaczynamy!</ItemSubtitle>
+          <p>Przeprowadzimy kampanię marketingową, aby Twoi klienci dowiedzieli się, jak łatwo mogą składać u Ciebie zamówienia.</p>
+        </SectionItem>
+      </PartnershipSection>
       <Footer/>
     </>
-    
-      
-    
   )
 }
 

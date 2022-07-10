@@ -7,14 +7,14 @@ export const Home = () => {
   return (
     <div>
       <div className='home-info'>
-        <img src='/images/home.jpg' alt='home-img'/>
+        <img src='/images/home.webp' alt='home-img'/>
         <div className='description'>
             <h2>Gastronauci <br/>lepiej lokalnie</h2>
             <p>Twój ulubiony lubelski portal. Stworzony w celu wsparcia lokalnych restauratorów i ich zamawiających</p>
         </div>
       </div>
       <div className='instruction'>
-        <img src='/images/lublin.png' alt='lublin'/>
+        <img src='/images/lublin.webp' alt='lublin'/>
         <h2>Gastronauci, jak to działa?</h2>
         <div className='instruction-container'>
           <div className='grid-container'>
@@ -39,7 +39,7 @@ export const Home = () => {
           </NavLink>
         </div>
         <div className='img-box'>
-          <img src='/images/partnership.png' alt='partnership'/>
+          <img src='/images/partnership.webp' alt='partnership'/>
         </div>
       </div>
       <Footer/>

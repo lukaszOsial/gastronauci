@@ -11,7 +11,7 @@ export const PartnershipFirstSection = styled.div`
     text-transform: uppercase;
     &::before{
         content: "";
-        background-image: url("/images/partnership2.png");
+        background-image: url("/images/partnership2.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -54,17 +54,19 @@ export const LinkItem = styled(NavLink)`
     }
 `;
 
-export const PartnershipSecondSection = styled.div`
+export const PartnershipSection = styled.div`
     display: flex;
     max-width: 1300px;
     text-align: center;
     flex-wrap: wrap;
+    padding-bottom: 30px;
     margin: 0 auto;
 `;
 
 export const Subtitle = styled.h2`
     font-size: 35px;
     margin-top: 50px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     text-align: center;
 `;
@@ -77,5 +79,15 @@ export const SectionItem = styled.div`
 export const ItemSubtitle = styled.h3`
     padding: 10px 0;
     font-size: 22px;
-    text-transform: uppercase`;
-    
+    text-transform: uppercase;
+`;
+
+export const Hr = styled.hr`
+    height: 2px;
+    border: none;
+    background-color: var(--primary);
+    width: 60%;
+    margin: 0 auto;
+`;
+
+

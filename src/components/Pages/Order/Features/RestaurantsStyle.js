@@ -45,3 +45,40 @@ export const FilterButton = styled.button`
         background-color: var(--gray-light);
     }
 `;
+
+export const RestaurantsList = styled.ul`
+    width: 100%;
+    
+`;
+
+export const RestaurantItem = styled.li`
+    display: flex;
+    border: 1px solid var(--gray-light);
+    margin-bottom: 20px;
+    border-radius: 5px;
+`;
+
+export const ItemImg = styled.img`
+    max-width: 180px;
+    max-height: 180px;
+    padding: 10px;
+    border-radius: 15px;
+`;
+
+export const RestaurantDescription = styled.div`
+    
+`;
+
+export const ItemName = styled.h3`
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--black);
+    padding: 0 10px;
+`;
+
+export const ItemAddress = styled.p`
+    font-size: 20px;
+    color: var(--black);
+    padding: 0 10px;
+`;
+

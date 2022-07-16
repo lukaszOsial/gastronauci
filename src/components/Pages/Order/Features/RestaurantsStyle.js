@@ -7,7 +7,7 @@ export const RestaurantsSection = styled.div`
 `;
 
 export const Filters = styled.div`
-    width: 25%;
+    width: 35%;
     max-width: 300px;
     border: 2px solid var(--primary);
     border-radius: 5px;
@@ -29,6 +29,14 @@ export const FiltersSubtitle = styled.h5`
     color: var(--gray-dark);
     border-bottom: 2px solid var(--primary);
     margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const ClearItem = styled.div`
+    visibility: visible;
+    display: flex;
+    align-items: center;
 `;
 
 export const FilterButton = styled.button`
@@ -43,7 +51,7 @@ export const FilterButton = styled.button`
     background: none;
     &:hover{
         background-color: var(--gray-light);
-    }
+    };
 `;
 
 export const RestaurantsList = styled.ul`
